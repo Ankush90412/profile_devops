@@ -33,15 +33,15 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
 	<header class="topbar">
 		<a href="#" class="logo">
-			<img src="assets/images/personal/logo_dark.png" alt="Lexfolio" width="145" height="32" class="dark">
-			<img src="assets/images/personal/logo_light.png" alt="Lexfolio" width="145" height="32" class="light">
+			<img src="assets/personal/logo_dark.png" alt="Lexfolio" width="145" height="32" class="dark">
+			<img src="assets/personal/logo_light.png" alt="Lexfolio" width="145" height="32" class="light">
 		</a>
 
 		<button class="icon-btn theme-btn" data-theme-btn>
@@ -76,7 +76,7 @@
 
 						<div class="btn-wrapper">
 							<a href="https://github.com/TLexYuW" class="chip" target="_blank">
-								<img src="assets/images/chips/github.svg" alt="Github Icon" width="24" height="24"
+								<img src="assets/chips/github.svg" alt="Github Icon" width="24" height="24"
 									viewBox="0 0 24 24" fill="none"
 									style="fill: var(--on-surface-variant); background-color: white; border-radius: var(--radius-circle);">
 
@@ -114,7 +114,7 @@
 			</section>
 
 			<div class="popup" id="popup">
-				<img src="assets/images/popup/success.png" style="background-color: white; display: inline;"
+				<img src="assets/popup/success.png" style="background-color: white; display: inline;"
 					id="success_img">
 				<h2>Thank You!</h2>
 				<p>Your details has been successfully submitted.</p>
@@ -158,12 +158,7 @@
 				<div>
 					<!-- Primary Tabs -->
 					<div class="primary-tabs">
-						<button class="tab-btn active" data-tab-btn="project">
-							<span class="tab-text title-small">Projects</span>
-							<div class="state-layer"></div>
-						</button>
-
-						<button class="tab-btn" data-tab-btn="resume">
+						<button class="tab-btn active" data-tab-btn="resume">
 							<span class="tab-text title-small">Resume</span>
 							<div class="state-layer"></div>
 						</button>
@@ -174,125 +169,10 @@
 						</button>
 					</div>
 
-					<!-- Project -->
-					<section class="section tab-content active" data-tab-content="project">
-						<div class="container">
-
-							<div class="project-list">
-
-								<!-- Card 1 -->
-								<div class="card">
-									<figure class="card-banner img-holder" style="--width: 333; --height: 180;">
-										<img src="assets/images/projects/arc-logo.png" alt="ARC" width="334"
-											height="180" class="img-cover" style="">
-									</figure>
-
-									<div class="card-content">
-										<span class="label-large card-subtitle">API Server</span>
-										<h3 class="title-large card-title">
-											Augmented Reality Collaboration
-										</h3>
-									</div>
-
-									<a href="https://www.arplanet.com.tw/ar-collaboration/" class="state-layer"
-										target="_blank"></a>
-
-								</div>
-
-								<!-- Card 2 -->
-								<div class="card">
-									<figure class="card-banner img-holder" style="--width: 333; --height: 180;">
-										<img src="assets/images/projects/nmns-coboverse.png" alt="NMNS - ETL Service"
-											width="334" height="180" class="img-cover" style="">
-									</figure>
-									<div class="card-content">
-										<span class="label-large card-subtitle">ETL Service</span>
-										<h3 class="title-large card-title">
-											NMNS - CoboVerse
-										</h3>
-									</div>
-									<a href="https://nmns.arplanets.com/" class="state-layer" target="_blank"></a>
-
-								</div>
-
-								<!-- Card 3 -->
-								<div class="card">
-									<figure class="card-banner img-holder" style="--width: 333; --height: 180;">
-										<img src="https://icon.icepanel.io/Technology/png-shadow-512/AWS.png"
-											alt="AWS Cloud Services" width="334" height="180" class="img-cover"
-											style="background-color: white;">
-									</figure>
-									<div class="card-content">
-										<span class="label-large card-subtitle">Lambda, API Gateway, DynamoDB, RDS,
-											Kinesis, EC2 ...etc.</span>
-										<h3 class="title-large card-title">
-											AWS Cloud Services
-										</h3>
-									</div>
-									<a href="https://aws.amazon.com/tw/" class="state-layer" target="_blank"></a>
-
-								</div>
-
-								<!-- Card 4 -->
-								<div class="card">
-									<figure class="card-banner img-holder" style="--width: 333; --height: 180;">
-										<img src="https://icon.icepanel.io/Technology/svg/Spring.svg"
-											alt="Weatherio - Live Weather App" width="334" height="180"
-											class="img-cover" style="background-color: white;">
-									</figure>
-									<div class="card-content">
-										<span class="label-large card-subtitle">GitHub - Spring Practice
-											Collection</span>
-										<h3 class="title-large card-title">
-											Spring - Side Projects
-										</h3>
-									</div>
-									<a href="https://github.com/lexyu-spring-projects-collection" class="state-layer"
-										target="_blank"></a>
-
-								</div>
-
-								<!-- Card 5 -->
-								<div class="card">
-									<figure class="card-banner img-holder" style="--width: 333; --height: 180;">
-										<img src="https://www.pngitem.com/pimgs/m/519-5194865_html-css-js-html-5-hd-png-download.png"
-											alt="Tvflix - Netflix Clone 2.0" width="334" height="180" class="img-cover">
-									</figure>
-									<div class="card-content">
-										<span class="label-large card-subtitle">GitHub - FrontEnd Practice
-											Collection</span>
-										<h3 class="title-large card-title">
-											Front End - Side Project Practices
-										</h3>
-									</div>
-									<a href="https://github.com/lexyu-front-end-collection" class="state-layer"
-										target="_blank"></a>
-
-								</div>
-
-								<!-- Card 6 -->
-								<div class="card">
-									<figure class="card-banner img-holder" style="--width: 333; --height: 180;">
-										<img src="https://raw.githubusercontent.com/egonelbre/gophers/63b1f5a9f334f9e23735c6e09ac003479ffe5df5/vector/superhero/standing.svg"
-											alt="Travelia - Travel Website" width="334" height="180" class="img-cover">
-									</figure>
-									<div class="card-content">
-										<span class="label-large card-subtitle">GitHub - Go Practice
-											Collection</span>
-										<h3 class="title-large card-title">
-											Go - Side Project Practices
-										</h3>
-									</div>
-									<a href="https://github.com/lexyu-golang-project-collection" class="state-layer"
-										target="_blank"></a>
-
-								</div>
-							</div>
-						</div>
-					</section>
+				
 
 					<!-- Resume -->
-					<section class="section tab-content resume-tab" data-tab-content="resume">
+					<section class="section tab-content resume-tab active" data-tab-content="resume">
 						<div class="container">
 							<!-- Experience -->
 							<h2 class="section-title title-small">Experience</h2>
@@ -377,11 +257,10 @@
 								<li class="resume-item">
 									<div class="resume-card">
 										<p class="body-large">
-											Bachelor - MING CHUAN UNIVERSITY <br>
-											銘傳大學
+											Bachelor - GNDU <br>
 										</p>
 										<span class="label-medium card-subtitle">
-											2015 - 2019
+											2015 - 2025
 										</span>
 									</div>
 								</li>
@@ -393,37 +272,7 @@
 							<h2 class="section-title title-small">Programming Languages</h2>
 							<ul class="resume-bottom-list">
 								<li class="resume-bottom-item">
-									<img src="assets/images/skills/languages/java.svg" width="28" height="28"
-										loading="lazy" viewBox="0 0 28 28" fill="none" alt="Java" class="icon">
-									<span class="label-medium">Java</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/languages/Kotlin.svg" width="28" height="28"
-										loading="lazy" viewBox="0 0 28 28" fill="none" alt="Kotlin" class="icon">
-									<span class="label-medium">Kotlin</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/languages/javascript.svg" width="28" height="28"
-										loading="lazy" viewBox="0 0 28 28" fill="none" alt="JS" class="icon">
-									<span class="label-medium">JavaScript</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/languages/node.js.svg" width="28" height="28"
-										loading="lazy" viewBox="0 0 28 28" fill="none" alt="Node" class="icon">
-									<span class="label-medium">NodeJS</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/languages/Go.svg" width="28" height="28"
-										loading="lazy" viewBox="0 0 28 28" fill="none" alt="Go" class="icon">
-									<span class="label-medium">Go</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/languages/Python.svg" width="28" height="28"
-										loading="lazy" viewBox="0 0 28 28" fill="none" alt="Python" class="icon">
-									<span class="label-medium">Python</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/languages/Bash.svg" width="28" height="28"
+									<img src="assets/Bash.svg" width="28" height="28"
 										loading="lazy" viewBox="0 0 28 28" fill="none" alt="Shell Script" class="icon"
 										style="background-color: white; border-radius: var(--radius-circle);">
 									<span class="label-medium">Shell Script</span>
@@ -432,87 +281,21 @@
 
 							<br>
 
-							<h2 class="section-title title-small">Frameworks</h2>
-							<ul class="resume-bottom-list">
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/frameworks/Spring.svg" width="28" height="28"
-										loading="lazy" alt="Spring" class="icon">
-									<span class="label-medium">Spring Projects</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/frameworks/Express.svg" width="28" height="28"
-										loading="lazy" alt="ExpressJS" class="icon"
-										style="background-color: white; border-radius: var(--radius-small);">
-									<span class="label-medium">ExpressJS</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/frameworks/FastAPI.svg" width="28" height="28"
-										loading="lazy" alt="FastAPI" class="icon">
-									<span class="label-medium">FastAPI</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/frameworks/gorilla_mux.png" width="28" height="28"
-										loading="lazy" alt="Gorilla Mux" class="icon">
-									<span class="label-medium">gorilla/mux</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/frameworks/gin.png" style="height: 30px !important;"
-										loading="lazy" alt="Gin" class="icon">
-									<span class="label-medium">Gin</span>
-								</li>
-							</ul>
-
-							<br>
-
-							<h2 class="section-title title-small">Databases</h2>
-							<ul class="resume-bottom-list">
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/databases/MySQL.svg" width="28" height="28"
-										loading="lazy" alt="MySQL" class="icon">
-									<span class="label-medium">MySQL</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/databases/PostgresSQL.svg" width="28" height="28"
-										loading="lazy" alt="PostgreSQL" class="icon">
-									<span class="label-medium">PostgreSQL</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/databases/Redis.svg" width="28" height="28"
-										loading="lazy" alt="Redis" class="icon">
-									<span class="label-medium">Redis</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/databases/mongoDB.svg" width="28" height="28"
-										loading="lazy" alt="MongoDB" class="icon">
-									<span class="label-medium">MongoDB</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/databases/SQLite.svg" width="28" height="28"
-										loading="lazy" alt="SQLite" class="icon">
-									<span class="label-medium">SQLite</span>
-								</li>
-							</ul>
-
-							<br>
-
+							
 							<h2 class="section-title title-small">VCS</h2>
 							<ul class="resume-bottom-list">
 								<li class="resume-bottom-item">
-									<img src="assets/images/skills/vcs/Git.svg" width="28" height="28" loading="lazy"
+									<img src="assets/Git.svg" width="28" height="28" loading="lazy"
 										alt="" class="icon">
 									<span class="label-medium">Git</span>
 								</li>
 								<li class="resume-bottom-item">
-									<img src="assets/images/chips/github.svg" width="28" height="28" loading="lazy"
+									<img src="assets/github.svg" width="28" height="28" loading="lazy"
 										alt="GitHub" class="icon"
 										style="background-color: white; border-radius: var(--radius-circle);">
 									<span class="label-medium">GitHub</span>
 								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/vcs/BitBucket.svg" width="28" height="28"
-										loading="lazy" alt="Bitbucket" class="icon">
-									<span class="label-medium">Bitbucket</span>
-								</li>
+							
 							</ul>
 
 							<br>
@@ -520,42 +303,15 @@
 							<h2 class="section-title title-small">DevOps</h2>
 							<ul class="resume-bottom-list">
 								<li class="resume-bottom-item">
-									<img src="assets/images/skills/devops/Docker.svg" width="28" height="28"
+									<img src="assets/Docker.svg" width="28" height="28"
 										loading="lazy" alt="Docker" class="icon">
 									<span class="label-medium">Docker</span>
 								</li>
 								<li class="resume-bottom-item">
-									<img src="assets/images/skills/devops/Jenkins.svg" width="28" height="28"
+									<img src="assets/Jenkins.svg" width="28" height="28"
 										loading="lazy" alt="Jenkins" class="icon">
 									<span class="label-medium">Jenkins</span>
 								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/devops/SonarQube.svg" width="28" height="28"
-										loading="lazy" alt="SonarQube" class="icon">
-									<span class="label-medium">SonarQube</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/devops/apache_maven.svg" width="28" height="28"
-										loading="lazy" alt="Maven" class="icon">
-									<span class="label-medium">Maven</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/devops/Gradle.svg" width="28" height="28"
-										loading="lazy" alt="Gradle" class="icon"
-										style="background-color: white; border-radius: var(--radius-small);">
-									<span class="label-medium">Gradle</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/devops/graalvm_rabbit.svg" width="28" height="28"
-										loading="lazy" alt="GraalVM" class="icon">
-									<span class="label-medium">GraalVM</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/devops/Vite.js.svg" width="28" height="28"
-										loading="lazy" alt="Vite" class="icon">
-									<span class="label-medium">Vite</span>
-								</li>
-
 							</ul>
 
 							<br>
@@ -563,23 +319,23 @@
 							<h2 class="section-title title-small">OS</h2>
 							<ul class="resume-bottom-list">
 								<li class="resume-bottom-item">
-									<img src="assets/images/skills/os/Linux.svg" width="28" height="28" loading="lazy"
+									<img src="assets/Linux.svg" width="28" height="28" loading="lazy"
 										alt="Linux" class="icon">
 									<span class="label-medium">Linux</span>
 								</li>
 								<li class="resume-bottom-item">
-									<img src="assets/images/skills/os/Ubuntu.svg" width="28" height="28" loading="lazy"
+									<img src="assets/Ubuntu.svg" width="28" height="28" loading="lazy"
 										alt="Ubuntu" class="icon">
 									<span class="label-medium">Ubuntu</span>
 								</li>
 								<li class="resume-bottom-item">
-									<img src="assets/images/skills/os/Apple.svg" width="28" height="28" loading="lazy"
+									<img src="assets/Apple.svg" width="28" height="28" loading="lazy"
 										alt="MacOS" class="icon"
 										style="background-color: white; border-radius: var(--radius-small);">
 									<span class="label-medium">MacOS</span>
 								</li>
 								<li class="resume-bottom-item">
-									<img src="assets/images/skills/os/windows-10.svg" width="28" height="28"
+									<img src="assets/windows-10.svg" width="28" height="28"
 										loading="lazy" alt="Windows" class="icon">
 									<span class="label-medium">Windows</span>
 								</li>
@@ -590,161 +346,10 @@
 							<h2 class="section-title title-small">Cloud Service</h2>
 							<ul class="resume-bottom-list">
 								<li class="resume-bottom-item">
-									<img src="assets/images/skills/cloud/aws.svg" width="28" height="28" loading="lazy"
+									<img src="assets/aws.svg" width="28" height="28" loading="lazy"
 										alt="AWS" class="icon"
 										style="background-color: white; border-radius: var(--radius-small);">
 									<span class="label-medium">AWS</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/cloud/Athena.svg" width="28" height="28"
-										loading="lazy" alt="Athena" class="icon">
-									<span class="label-medium">Athena</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/cloud/Kinesis.svg" width="28" height="28"
-										loading="lazy" alt="Kinesis" class="icon">
-									<span class="label-medium">Kinesis</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/cloud/API_Gateway.svg" width="28" height="28"
-										loading="lazy" alt="API Gateway" class="icon">
-									<span class="label-medium">API Gateway</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/cloud/CloudWatch.svg" width="28" height="28"
-										loading="lazy" alt="CloudWatch" class="icon">
-									<span class="label-medium">CloudWatch</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/cloud/Systems_Manager.svg" width="28" height="28"
-										loading="lazy" alt="System Manager" class="icon">
-									<span class="label-medium">System Manager</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/cloud/Simple-Notification-Service.svg" width="28"
-										height="28" loading="lazy" alt="SNS" class="icon">
-									<span class="label-medium">SNS</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/cloud/Simple-Queue-Service.svg" width="28"
-										height="28" loading="lazy" alt="SQS" class="icon">
-									<span class="label-medium">SQS</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/cloud/EC2.svg" width="28" height="28" loading="lazy"
-										alt="EC2" class="icon">
-									<span class="label-medium">EC2</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/cloud/Lambda.svg" width="28" height="28"
-										loading="lazy" alt="Lambda" class="icon">
-									<span class="label-medium">Lambda</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/cloud/RDS.svg" width="28" height="28" loading="lazy"
-										alt="RDS" class="icon">
-									<span class="label-medium">RDS</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/cloud/DynamoDB.svg" width="28" height="28"
-										loading="lazy" alt="DynamoDB" class="icon">
-									<span class="label-medium">DynamoDB</span>
-								</li>
-
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/cloud/Cognito.svg" width="28" height="28"
-										loading="lazy" alt="Cognito" class="icon">
-									<span class="label-medium">Cognito</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/cloud/IAM.svg" width="28" height="28" loading="lazy"
-										alt="IAM" class="icon">
-									<span class="label-medium">IAM</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/cloud/S3.svg" width="28" height="28" loading="lazy"
-										alt="S3" class="icon">
-									<span class="label-medium">S3</span>
-								</li>
-
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/cloud/netlify.svg" width="28" height="28"
-										loading="lazy" alt="Netlifly" class="icon">
-									<span class="label-medium">Netlifly</span>
-								</li>
-
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/cloud/Vercel.svg" width="28" height="28"
-										loading="lazy" alt="Vercel" class="icon" style="background-color: white;">
-									<span class="label-medium">Vercel</span>
-								</li>
-
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/cloud/Render.webp" width="28" height="28"
-										loading="lazy" alt="Render" class="icon" style="background-color: white;">
-									<span class="label-medium">Render</span>
-								</li>
-							</ul>
-
-							<br>
-
-							<h2 class="section-title title-small">Tools / IDE / Editor</h2>
-							<ul class="resume-bottom-list">
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/tools/vs_code.svg" width="28" height="28"
-										loading="lazy" alt="VS Code" class="icon">
-									<span class="label-medium">VS Code</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/tools/IntelliJ_IDEA.svg" width="28" height="28"
-										loading="lazy" alt="IntelliJ" class="icon">
-									<span class="label-medium">IntelliJ</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/tools/Jupyter.svg" width="28" height="28"
-										loading="lazy" alt="Jupyter" class="icon">
-									<span class="label-medium">Jupyter</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/tools/Postman.svg" width="28" height="28"
-										loading="lazy" alt="Postman" class="icon">
-									<span class="label-medium">Postman</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/tools/Swagger.svg" width="28" height="28"
-										loading="lazy" alt="Swagger" class="icon">
-									<span class="label-medium">Swagger</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/tools/OpenAPI.svg" width="28" height="28"
-										loading="lazy" alt="Open API" class="icon">
-									<span class="label-medium">Open API</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/tools/ngrok.png" width="28" height="28"
-										loading="lazy" alt="ngrok" class="icon">
-									<span class="label-medium">ngrok</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/tools/mermaid.png" width="28" height="28"
-										loading="lazy" alt="Mermaid" class="icon">
-									<span class="label-medium">Mermaid</span>
-								</li>
-							</ul>
-
-							<br>
-
-							<h2 class="section-title title-small">Others</h2>
-							<ul class="resume-bottom-list">
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/others/html5.svg" width="28" height="28"
-										loading="lazy" alt="HTML5" class="icon">
-									<span class="label-medium">HTML5</span>
-								</li>
-								<li class="resume-bottom-item">
-									<img src="assets/images/skills/others/css3.svg" width="28" height="28"
-										loading="lazy" alt="CSS3" class="icon">
-									<span class="label-medium">CSS3</span>
 								</li>
 							</ul>
 						</div>
@@ -771,7 +376,7 @@
 											</p>
 
 											<a href="#" class="label-small info-text">
-												example@gmail.com
+												ankush90412@gmail.com
 											</a>
 										</div>
 
@@ -789,7 +394,7 @@
 											</p>
 
 											<a href="#" class="label-small info-text">
-												+886 0900-000-000
+												+91-9041218761
 											</a>
 										</div>
 
@@ -807,7 +412,7 @@
 											</p>
 
 											<a href="#" class="label-small info-text">
-												Taiwan, Taipei
+												Mohali, India
 											</a>
 										</div>
 
@@ -878,13 +483,12 @@
 		</div>
 	</footer>
 
-	<script src="./js/script.js"></script>
-	<script src="./js/form.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/form.js"></script>
 	<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
 		integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 		crossorigin="anonymous"></script>
 </body>
-
 </html>
