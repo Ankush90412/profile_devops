@@ -252,9 +252,9 @@
   }
   
   .title-small {
-    font-family: var(--font-primary);
+    /* font-family: var(--font-primary);
     font-size: var(--title-small);
-    font-weight: var(--weight-medium);
+    font-weight: var(--weight-medium); */
     line-height: 20px;
     letter-spacing: 0.1px;
   }
@@ -300,7 +300,9 @@
     line-height: 16px;
     letter-spacing: 0.5px;
   }
-  
+  .resume-card p{
+    font-weight: 500;
+  }
   /*-----------------------------------*\
     #REUSED STYLE
   \*-----------------------------------*/
@@ -363,10 +365,17 @@
   }
   
   .section-title {
-    margin-block-end: 16px;
+    font-size: 16px;
+}
+  
+  .body-large.inner-section-title
+  {
+    font-size: 14px;
   }
-  
-  
+  .resume-card ul li {
+    font-size: 14px;
+}
+
   /*-----------------------------------*\
     #COMPONENT
   \*-----------------------------------*/
@@ -414,6 +423,7 @@
     position: relative;
     height: 48px;
     line-height: 48px;
+    font-weight: bolder;
   }
   
   .tab-text::after {
