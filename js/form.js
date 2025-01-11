@@ -20,35 +20,6 @@ var spinner = `
 </div>
 `
 
-form.addEventListener('submit', e => {
-	submitButton.disabled = true
-	e.preventDefault()
-	let requestBody = new FormData(form)
-
-	var temp = sendMsgBtn.innerHTML;
-	sendMsgBtn.innerHTML = spinner;
-
-	fetch(scriptURL, { method: 'POST', body: requestBody })
-		.then(response => {
-			console.log("Response : " + response.status);
-			if (response.status == '200') {
-				openPopup();
-			}
-			submitButton.disabled = false
-			form.reset();
-			sendMsgBtn.innerHTML = temp
-			return response.json();
-		})
-		.then(data => {
-			console.log("Response Body : ", data);
-		})
-		.catch(error => {
-			console.error("Error : " + error.message);
-			form.reset();
-			sendMsgBtn.innerHTML = temp
-			submitButton.disabled = false
-		})
-})
 
 function openPopup() {
 	popup.classList.add('open-popup');

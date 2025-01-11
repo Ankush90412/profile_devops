@@ -9,8 +9,8 @@ const /** {NodeElement} */ $HTML = document.documentElement;
 let /** {Boolean | String} */ isDark = window.matchMedia("(prefers-color-scheme:light)")
 	.matches;
 
- console.log(window.matchMedia("(prefers-color-scheme:dark)"));
- console.log(isDark);
+//  console.log(window.matchMedia("(prefers-color-scheme:dark)"));
+//  console.log(isDark);
 
 if (sessionStorage.getItem("theme")) {
 	$HTML.dataset.theme = sessionStorage.getItem("theme");

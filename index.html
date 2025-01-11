@@ -34,6 +34,40 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
+    <script>
+       function sendEmail(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Collect form input values manually
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            // Create a JSON object
+            const data = { name, email, message };
+
+            // Send the data using fetch
+            fetch("send_email.php", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json", // Indicate JSON payload
+                },
+                body: JSON.stringify(data), // Serialize the JSON object to a string
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert("Emails sent successfully!");
+                } else {
+                    alert("Failed to send emails: " + data.message);
+                }
+            })
+            .catch(error => {
+                console.error("Error:", error);
+                alert("An error occurred while sending emails.");
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -451,14 +485,14 @@
                             <div class="contact-form">
                                 <h3 class="title-large">Let's Work Together.</h3>
 
-                                <form method="post" class="input-wrapper" id="form">
-                                    <input type="text" name="name" placeholder="Name*" required class="input-field">
+                                <form  action="send_email.php" onsubmit="sendEmail(event)" method="post" class="input-wrapper" id="form">
+                                    <input type="text" id="name" name="name" placeholder="Name*" required class="input-field">
 
-                                    <input type="email" name="email" placeholder="Email*" required class="input-field">
+                                    <input type="email" id="email" name="email" placeholder="Email*" required class="input-field">
 
-                                    <input type="text" name="subject" placeholder="Subject" class="input-field">
+                                    <input type="text" name="subject" name="subject" placeholder="Subject" class="input-field">
 
-                                    <textarea name="message" placeholder="Message*" class="textarea"></textarea>
+                                    <textarea id="message" name="message" placeholder="Message*" class="textarea"></textarea>
 
                                     <!-- onclick="openPopup()" -->
                                     <button class="btn" type="submit" id="submit-btn">
