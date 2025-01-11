@@ -39,11 +39,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Send emails
     if (mail($owner_email, $subject_to_owner, $owner_message, $headers) &&
         mail($email, $subject_to_user, $user_message, $headers)) {
-        echo "Emails sent successfully!";
+            echo json_encode(["success" => true, "message" => "Emails sent successfully!"]);
     } else {
-        echo "Failed to send emails.";
+        echo json_encode(["success" => false, "message" => "Email not sent."]);
     }
 } else {
-    echo "Invalid request.";
+    echo json_encode(["success" => false, "message" => "Invalid request."]);
+ 
 }
 ?>
