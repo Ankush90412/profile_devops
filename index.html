@@ -1,239 +1,498 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
+
 <head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ankush - Personal Portfolio</title>
+    <meta name="author" content="Ankush">
+    <meta name="title" content="Ankush - Personal Portfolio">
+    <meta name="description" content="Passionate Software Enginner Personal Website">
+
+    <meta property="og:author" content="Ankush">
+    <meta property="og:title" content="Ankush - Personal Portfolio">
+    <meta property="og:description" content="Passionate Software Enginner Personal Website">
+    <meta property="og:image" content="https://raw.githubusercontent.com/TLexYuW/meta-og-sample/main/logo_light.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <link rel="shortcut icon" href="./gopher-shield.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Open+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
 </head>
+
 <body>
+    <header class="topbar">
+        <a href="#" class="logo">
+            <img src="assets/akki_logo.png" alt="Lexfolio" width="70" height="32" class="dark">
+            <img src="assets/akki_logo.png" alt="Lexfolio" width="70" height="32" class="light">
+        </a>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
-        <a href="#" class="w3-bar-item w3-button">Extras</a>
-        <a href="#" class="w3-bar-item w3-button">Media</a>
-      </div>
-    </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-  </div>
-</div>
+        <button class="icon-btn theme-btn" data-theme-btn>
+            <span class="material-symbols-outlined dark" aria-hidden="true"> dark_mode </span>
+            <span class="material-symbols-outlined light" aria-hidden="true"> light_mode </span>
+            <div class="state-layer"></div>
+        </button>
+    </header>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
-</div>
 
-<!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
+    <main>
+        <article>
 
-  <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/la.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Los Angeles</h3>
-      <p><b>We had the best time playing at Venice Beach!</b></p>   
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/ny.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>New York</h3>
-      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/chicago.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Chicago</h3>
-      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
-    </div>
-  </div>
+            <!-- Personal -->
+            <section class="section hero">
+                <div class="container">
+                    <figure class="hero-banner img-holder" style="--width: 240; --height: 260;">
+                        <img src="assets/profile_gopher_custom.jpeg" width="240" height="260" alt="Lex"
+                            class="img-cover">
+                    </figure>
 
-  <!-- The Band Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-    <h2 class="w3-wide">THE BAND</h2>
-    <p class="w3-opacity"><i>We love music</i></p>
-    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
-      </div>
-    </div>
-  </div>
+                    <div class="hero-content">
+                        <span class="label-large section-subtitle">
+                            Devops Enginner
+                        </span>
 
-  <!-- The Tour Section -->
-  <div class="w3-black" id="tour">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">TOUR DATES</h2>
-      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
+                        <h1 class="display-small">Ankush</h1>
 
-      <ul class="w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
-      </ul>
+                        <p class="body-large section-text">
+                            Detail-oriented DevOps Engineer with one year of experience in automating, deploying, and
+                            managing scalable applications. Proficient in using CI/CD tools like GitHub Actions to
+                            streamline software delivery and enhance development workflows.Basic Experience in cloud
+                            platforms (AWS/Azure), containerization technologies like Docker, and orchestration tools
+                            such as Kubernetes. Experienced in infrastructure-as-code (IaC) using tools like Terraform
+                            and Ansible. Known for effective problem-solving, quick learning, and a proactive approach
+                            to improving system reliability and deployment processes.
+                        </p>
 
-      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>New York</b></p>
-            <p class="w3-opacity">Fri 27 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Paris</b></p>
-            <p class="w3-opacity">Sat 28 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>San Francisco</b></p>
-            <p class="w3-opacity">Sun 29 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+                        <div class="btn-wrapper">
+                            <a href="https://github.com/TLexYuW" class="chip" target="_blank">
+                                <img src="assets/chips/github.svg" alt="Github Icon" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none"
+                                    style="fill: var(--on-surface-variant); background-color: white; border-radius: var(--radius-circle);">
 
-  <!-- Ticket Modal -->
-  <div id="ticketModal" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal w3-center w3-padding-32"> 
-        <span onclick="document.getElementById('ticketModal').style.display='none'" 
-       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
-      </header>
-      <div class="w3-container">
-        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="How many?">
-        <p><label><i class="fa fa-user"></i> Send To</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="Enter email">
-        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
-        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
-      </div>
-    </div>
-  </div>
+                                <div class="state-layer"></div>
+                            </a>
 
-  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
-      </div>
-      <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                            <a href="https://www.linkedin.com/in/ankush-baa012247" class="chip" target="_blank">
+                                <img src="https://img.icons8.com/?size=512&id=13930&format=png" alt="Linkedin Icon"
+                                    width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    style="fill: var(--on-surface-variant); border-radius: var(--radius-circle);">
+
+                                <div class="state-layer"></div>
+                            </a>
+
+
+
+                            <a href="https://www.cakeresume.com/s--6-tz0SQzClz4X0utkmyM9A--/lexyu-resume-4d49ee-562497"
+                                class="chip" target="_blank">
+                                English CV
+                                <span class="material-symbols-outlined" aria-hidden="true"> contract </span>
+
+                                <div class="state-layer"></div>
+                            </a>
+                            <a href="mailto:ankush90412@gmail.com" class="chip">
+                                <span class="material-symbols-outlined" aria-hidden="true"> mail </span>
+                                <span class="label-large">ankush90412@gmail.com</span>
+                                <div class="state-layer"></div>
+                            </a>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="popup" id="popup">
+                <img src="assets/popup/success.png" style="background-color: white; display: inline;" id="success_img">
+                <h2>Thank You!</h2>
+                <p>Your details has been successfully submitted.</p>
+                <button type="button" onclick="closePopup()">OK</button>
             </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+
+            <!-- Main Content -->
+            <div class="article">
+
+                <!-- About Card -->
+                <div class="about-card">
+                    <h2 class="card-title title-medium">
+                        About
+                    </h2>
+
+                    <p class="body-medium card-text">
+                        A Passionate Devops Developer. <br>
+                        I'm currently learning DevOps Skills and anything
+                        interesting.
+                    </p>
+
+                    <ul class="about-list">
+                        <li class="list-item">
+                            <span class="material-symbols-outlined" aria-hidden="true"> location_on </span>
+
+                            <span class="label-medium">
+                                Mohali, India
+                            </span>
+                        </li>
+
+                        <li class="list-item">
+                            <span class="material-symbols-outlined" aria-hidden="true"> work </span>
+
+                            <span class="label-medium">
+                                Mohali
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <!-- Primary Tabs -->
+                    <div class="primary-tabs">
+                        <button class="tab-btn active" data-tab-btn="resume">
+                            <span class="tab-text title-small">Resume</span>
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <button class="tab-btn" data-tab-btn="contact">
+                            <span class="tab-text title-small">Contact</span>
+                            <div class="state-layer"></div>
+                        </button>
+                    </div>
+
+
+
+                    <!-- Resume -->
+                    <section class="section tab-content resume-tab active" data-tab-content="resume">
+                        <div class="container">
+                            <!-- Experience -->
+                            <h2 class="section-title title-small">Experience</h2>
+                            <ul class="list">
+                                <div class="resume-card">
+                                    <p class="body-large">Java Backend Developer - Arplanet
+
+                                        <span class="label-medium card-subtitle">
+                                            2022/11 - Present
+                                        </span>
+
+                                        <span class="body-medium card-text">
+                                            <p><b>Responsibilities :</b></p>
+                                            <ul>
+                                                <li style="list-style: circle;">Experience with WP Engine, Azure and
+                                                    Basic Knowledge of AWS.
+                                                </li>
+                                                <li style="list-style: circle;">Deployed and managed scalable
+                                                    application using Azure Web Apps, enhancing application uptime and
+                                                    performance.
+                                                </li>
+                                                <li style="list-style: circle;">Designed and implemented CI/CD pipelines
+                                                    using GitHub Actions, automating build, test, and deployment
+                                                    workflows.
+                                                </li>
+
+                                            </ul>
+                                        </span>
+                                    </p>
+                                </div>
+
+                                <div class="resume-card">
+                                    <p class="body-large">Bank Teller
+                                        <span class="label-medium card-subtitle">
+                                            2018/7 - 2022/4
+                                        </span>
+                                        <span class="body-medium card-text">
+
+                                        </span>
+                                    </p>
+                                    <ul>
+                                        <li style="list-style: circle;">Managed source code repositories and branching
+                                            strategies to ensure efficient team collaboration.</li>
+                                        <li style="list-style: circle;">Basic understanding of containerization using
+                                            Docker and orchestration tools like Kubernetes for efficient deployment.
+                                        </li>
+                                        <li style="list-style: circle;">Basic knowledge of IAC and configuration
+                                            management tools such as
+                                            Terraform and Ansible.
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+
+
+
+
+
+
+                            </ul>
+
+                            <!-- Education -->
+                            <h2 class="section-title title-small">Education</h2>
+
+                            <ul class="list">
+                                <li class="resume-item">
+                                    <div class="resume-card">
+
+                                        <p class="body-large">
+                                            Bachlors of Computers Applications
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li class="resume-item">
+                                    <div class="resume-card">
+                                        <p class="body-large">
+                                            Guru Nanak Dev University <br>
+                                        </p>
+                                        <span class="label-medium card-subtitle">
+                                            03/2012- 03/2016
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <!-- SKills -->
+                            <!-- <h2 class="section-title title-small">Skills and Technologies</h2> -->
+
+                            <h2 class="section-title title-small">Programming Languages</h2>
+                            <ul class="resume-bottom-list">
+                                <li class="resume-bottom-item">
+                                    <img src="assets/Bash.svg" width="28" height="28" loading="lazy" viewBox="0 0 28 28"
+                                        fill="none" alt="Shell Script" class="icon"
+                                        style="background-color: white; border-radius: var(--radius-circle);">
+                                    <span class="label-medium">Shell Script</span>
+                                </li>
+                            </ul>
+
+                            <br>
+
+
+                            <h2 class="section-title title-small">VCS</h2>
+                            <ul class="resume-bottom-list">
+                                <li class="resume-bottom-item">
+                                    <img src="assets/Git.svg" width="28" height="28" loading="lazy" alt="" class="icon">
+                                    <span class="label-medium">Git</span>
+                                </li>
+                                <li class="resume-bottom-item">
+                                    <img src="assets/github.svg" width="28" height="28" loading="lazy" alt="GitHub"
+                                        class="icon"
+                                        style="background-color: white; border-radius: var(--radius-circle);">
+                                    <span class="label-medium">GitHub</span>
+                                </li>
+
+                            </ul>
+
+                            <br>
+
+                            <h2 class="section-title title-small">DevOps</h2>
+                            <ul class="resume-bottom-list">
+                                <li class="resume-bottom-item">
+                                    <img src="assets/Docker.svg" width="28" height="28" loading="lazy" alt="Docker"
+                                        class="icon">
+                                    <span class="label-medium">Docker</span>
+                                </li>
+                                <li class="resume-bottom-item">
+                                    <img src="assets/Jenkins.svg" width="28" height="28" loading="lazy" alt="Jenkins"
+                                        class="icon">
+                                    <span class="label-medium">Jenkins</span>
+                                </li>
+                            </ul>
+
+                            <br>
+
+                            <h2 class="section-title title-small">OS</h2>
+                            <ul class="resume-bottom-list">
+                                <li class="resume-bottom-item">
+                                    <img src="assets/Linux.svg" width="28" height="28" loading="lazy" alt="Linux"
+                                        class="icon">
+                                    <span class="label-medium">Linux</span>
+                                </li>
+                                <li class="resume-bottom-item">
+                                    <img src="assets/Ubuntu.svg" width="28" height="28" loading="lazy" alt="Ubuntu"
+                                        class="icon">
+                                    <span class="label-medium">Ubuntu</span>
+                                </li>
+                                <li class="resume-bottom-item">
+                                    <img src="assets/Apple.svg" width="28" height="28" loading="lazy" alt="MacOS"
+                                        class="icon"
+                                        style="background-color: white; border-radius: var(--radius-small);">
+                                    <span class="label-medium">MacOS</span>
+                                </li>
+                                <li class="resume-bottom-item">
+                                    <img src="assets/windows-10.svg" width="28" height="28" loading="lazy" alt="Windows"
+                                        class="icon">
+                                    <span class="label-medium">Windows</span>
+                                </li>
+                            </ul>
+
+                            <br>
+
+                            <h2 class="section-title title-small">Cloud Service</h2>
+                            <ul class="resume-bottom-list">
+                                <li class="resume-bottom-item">
+                                    <img src="assets/aws.svg" width="28" height="28" loading="lazy" alt="AWS"
+                                        class="icon"
+                                        style="background-color: white; border-radius: var(--radius-small);">
+                                    <span class="label-medium">AWS</span>
+                                  </li>
+                                  <li class="resume-bottom-item">
+                                  <img src="assets/azure.png" width="28" height="28" loading="lazy" alt="AWS"
+                                  class="icon"
+                                  style="background-color: white; border-radius: var(--radius-small);">
+                              <span class="label-medium">Azure</span>
+                          </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- Contact -->
+                    <section class="section tab-content contact-tab" data-tab-content="contact">
+                        <div class="container">
+
+                            <!-- Contact Info -->
+                            <div class="contact-info">
+                                <h4 class="section-title title-small">Contact Info</h4>
+
+                                <ul class="contact-info-list">
+                                    <li class="contact-info-item">
+                                        <div class="icon-box">
+                                            <span class="material-symbols-outlined" aria-hidden="true">
+                                                mail
+                                            </span>
+                                        </div>
+                                        <div class="info-content">
+                                            <p class="label-small info-title">
+                                                Mail Me
+                                            </p>
+
+                                            <a href="#" class="label-small info-text">
+                                                ankush90412@gmail.com
+                                            </a>
+                                        </div>
+
+                                    </li>
+
+                                    <li class="contact-info-item">
+                                        <div class="icon-box">
+                                            <span class="material-symbols-outlined" aria-hidden="true">
+                                                call
+                                            </span>
+                                        </div>
+                                        <div class="info-content">
+                                            <p class="label-small info-title">
+                                                Contact Me
+                                            </p>
+
+                                            <a href="#" class="label-small info-text">
+                                                +91-9041218761
+                                            </a>
+                                        </div>
+
+                                    </li>
+
+                                    <li class="contact-info-item">
+                                        <div class="icon-box">
+                                            <span class="material-symbols-outlined" aria-hidden="true">
+                                                location_on
+                                            </span>
+                                        </div>
+                                        <div class="info-content">
+                                            <p class="label-small info-title">
+                                                Address
+                                            </p>
+
+                                            <a href="#" class="label-small info-text">
+                                                Mohali, India
+                                            </a>
+                                        </div>
+
+                                    </li>
+                                </ul>
+
+                                <h4 class="title-small">Social Info</h4>
+                                <div class="social-list">
+
+                                    <a href="#" class="social-item">
+                                        <img src="https://img.icons8.com/?size=512&id=60014&format=png" alt=""
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            style="background-color: white; fill: var(--on-surface-variant); border-radius: var(--radius-circle)">
+                                    </a>
+
+                                    <a href="#" class="social-item">
+                                        <img src="https://img.icons8.com/?size=512&id=118467&format=png" alt=""
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            style="background-color: white; fill: var(--on-surface-variant); border-radius: var(--radius-circle)">
+                                    </a>
+
+                                    <a href="#" class="social-item">
+                                        <img src="https://img.icons8.com/?size=512&id=dz63urxyxSdO&format=png" alt=""
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            style="background-color: white; fill: var(--on-surface-variant); border-radius: var(--radius-circle)">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Contact Form -->
+                            <div class="contact-form">
+                                <h3 class="title-large">Let's Work Together.</h3>
+
+                                <form method="post" class="input-wrapper" id="form">
+                                    <input type="text" name="name" placeholder="Name*" required class="input-field">
+
+                                    <input type="email" name="email" placeholder="Email*" required class="input-field">
+
+                                    <input type="text" name="subject" placeholder="Subject" class="input-field">
+
+                                    <textarea name="message" placeholder="Message*" class="textarea"></textarea>
+
+                                    <!-- onclick="openPopup()" -->
+                                    <button class="btn" type="submit" id="submit-btn">
+                                        <span class="label-large" id="send_msg_btn">Send Message</span>
+
+                                        <div class="state-layer"></div>
+                                    </button>
+
+
+                                </form>
+                            </div>
+
+                        </div>
+                    </section>
+
+                </div>
+
             </div>
-          </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-        </form>
-      </div>
-    </div>
-  </div>
-  
-<!-- End Page Content -->
-</div>
 
-<!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+        </article>
+    </main>
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="body-medium">Copyright 2024. Clone and Refactor from by codewithsadee</p>
+        </div>
+    </footer>
 
-<script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
-
+    <script src="js/script.js"></script>
+    <script src="js/form.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
