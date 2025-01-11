@@ -6,7 +6,7 @@
 
 const /** {NodeElement} */ $themeBtn = document.querySelector("[data-theme-btn]");
 const /** {NodeElement} */ $HTML = document.documentElement;
-let /** {Boolean | String} */ isDark = window.matchMedia("(prefers-color-scheme:dark)")
+let /** {Boolean | String} */ isDark = window.matchMedia("(prefers-color-scheme:light)")
 	.matches;
 
  console.log(window.matchMedia("(prefers-color-scheme:dark)"));
